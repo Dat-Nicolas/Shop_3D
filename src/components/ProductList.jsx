@@ -2,6 +2,16 @@ import React from 'react';
 import { Star, Eye } from 'lucide-react';
 import { products } from '../data/products';
 
+const CATEGORY_LABELS = {
+  fruits:        'Trái Cây',
+  agriculture:   'Nông Sản',
+  seafood:       'Hải Sản',
+  luxury_cars:   'Xe Hạng Sang',
+  electronics:   'Điện Tử',
+  agri_tools:    'Nông Cụ',
+  processed_food:'Đặc Sản',
+};
+
 export default function ProductList({ activeCategory, onProductSelect, onAddToCart }) {
   const filteredProducts = activeCategory === 'all'
     ? products
@@ -72,7 +82,7 @@ export default function ProductList({ activeCategory, onProductSelect, onAddToCa
                 <div>
                   <div className="flex justify-between items-center mb-3">
                     <span className="px-2.5 py-0.5 bg-slate-100 text-on-surface-variant text-xs font-semibold rounded-md">
-                      {product.category === 'fruits' ? 'Trái Cây' : product.category === 'agriculture' ? 'Nông Sản' : 'Hải Sản'}
+                      {CATEGORY_LABELS[product.category] ?? product.category}
                     </span>
                     <div className="flex items-center gap-1 text-amber-500">
                       <Star className="w-4 h-4 fill-amber-500" />

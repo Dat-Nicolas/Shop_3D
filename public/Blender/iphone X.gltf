@@ -1,0 +1,532 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.0.21",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "iphone 10",
+      "rotation": [
+        -0.0004078917554579675,
+        -0.7070353627204895,
+        -0.000029936454666312784,
+        0.7071780562400818
+      ],
+      "scale": [
+        7.858201503753662,
+        7.8582024574279785,
+        7.858201503753662
+      ],
+      "translation": [
+        0.1483202874660492,
+        1.1224915981292725,
+        0.1857919842004776
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "iphone 10.001",
+      "rotation": [
+        -0.0002672547707334161,
+        -1,
+        -0.00030959132709540427,
+        0.00010084382665809244
+      ],
+      "scale": [
+        7.858201503753662,
+        7.8582024574279785,
+        7.858201503753662
+      ],
+      "translation": [
+        0.007185399532318115,
+        1.7124443054199219,
+        -0.18529517948627472
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "IPHONE",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture": {
+        "index": 2
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 7
+        }
+      },
+      "name": "iphone-x-screenshot",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "glass"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cube.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "Cube.003",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 15,
+            "NORMAL": 16,
+            "TEXCOORD_0": 17
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 18,
+            "NORMAL": 19,
+            "TEXCOORD_0": 20
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 1,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "name": "IPHONE_Base_Color",
+      "uri": "iphone X_img0.png"
+    },
+    {
+      "name": "IPHONE_Metallic-IPHONE_Roughness",
+      "uri": "iphone X_img1.png"
+    },
+    {
+      "name": "iphone-x-screenshot",
+      "uri": "iphone X_img2.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 15947,
+      "max": [
+        0.041927047073841095,
+        0.08322542905807495,
+        0.008798365481197834
+      ],
+      "min": [
+        -0.041927073150873184,
+        -0.08322542905807495,
+        -0.001397979911416769
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 15947,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 15947,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 79632,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 49,
+      "max": [
+        0.0363992340862751,
+        0.07822632044553757,
+        0.007992624305188656
+      ],
+      "min": [
+        -0.0363992340862751,
+        -0.07822632044553757,
+        0.007992614060640335
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 49,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 49,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 216,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 1604,
+      "max": [
+        0.03631781414151192,
+        0.07817436009645462,
+        0.008705158717930317
+      ],
+      "min": [
+        -0.03631781414151192,
+        -0.07817436009645462,
+        -0.0014115242520347238
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 1604,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 1604,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 9600,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 12,
+      "componentType": 5126,
+      "count": 15947,
+      "max": [
+        0.041927047073841095,
+        0.08322542905807495,
+        0.008798365481197834
+      ],
+      "min": [
+        -0.041927073150873184,
+        -0.08322542905807495,
+        -0.001397979911416769
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 13,
+      "componentType": 5126,
+      "count": 15947,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 14,
+      "componentType": 5126,
+      "count": 15947,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 15,
+      "componentType": 5126,
+      "count": 49,
+      "max": [
+        0.0363992340862751,
+        0.07822632044553757,
+        0.007992624305188656
+      ],
+      "min": [
+        -0.0363992340862751,
+        -0.07822632044553757,
+        0.007992614060640335
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 16,
+      "componentType": 5126,
+      "count": 49,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 17,
+      "componentType": 5126,
+      "count": 49,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 18,
+      "componentType": 5126,
+      "count": 1604,
+      "max": [
+        0.03631781414151192,
+        0.07817436009645462,
+        0.008705158717930317
+      ],
+      "min": [
+        -0.03631781414151192,
+        -0.07817436009645462,
+        -0.0014115242520347238
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 19,
+      "componentType": 5126,
+      "count": 1604,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 20,
+      "componentType": 5126,
+      "count": 1604,
+      "type": "VEC2"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 191364,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 191364,
+      "byteOffset": 191364,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 127576,
+      "byteOffset": 382728,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 159264,
+      "byteOffset": 510304,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 588,
+      "byteOffset": 669568,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 588,
+      "byteOffset": 670156,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 392,
+      "byteOffset": 670744,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 432,
+      "byteOffset": 671136,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19248,
+      "byteOffset": 671568,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19248,
+      "byteOffset": 690816,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12832,
+      "byteOffset": 710064,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19200,
+      "byteOffset": 722896,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 191364,
+      "byteOffset": 742096,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 191364,
+      "byteOffset": 933460,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 127576,
+      "byteOffset": 1124824,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 588,
+      "byteOffset": 1252400,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 588,
+      "byteOffset": 1252988,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 392,
+      "byteOffset": 1253576,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19248,
+      "byteOffset": 1253968,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19248,
+      "byteOffset": 1273216,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12832,
+      "byteOffset": 1292464,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    },
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 33071,
+      "wrapT": 33071
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "iphone X_data.bin",
+      "byteLength": 1305296
+    }
+  ]
+}

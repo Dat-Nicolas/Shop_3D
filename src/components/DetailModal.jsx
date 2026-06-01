@@ -2,6 +2,16 @@ import React, { useState } from 'react';
 import { X, Star, ShoppingBag, RotateCw, MapPin, Sparkles } from 'lucide-react';
 import Viewer3D from './Viewer3D';
 
+const CATEGORY_LABELS = {
+  fruits:        'Trái Cây Tươi',
+  agriculture:   'Nông Sản Sạch',
+  seafood:       'Hải Sản Cao Cấp',
+  luxury_cars:   'Xe Hơi Hạng Sang',
+  electronics:   'Thiết Bị Điện Tử',
+  agri_tools:    'Nông Cụ & Vật Tư',
+  processed_food:'Thực Phẩm Đặc Sản',
+};
+
 export default function DetailModal({ product, onClose, onAddToCart }) {
   const [quantity, setQuantity] = useState(1);
   const [autoRotate, setAutoRotate] = useState(true);
@@ -73,7 +83,7 @@ export default function DetailModal({ product, onClose, onAddToCart }) {
           <div>
             {/* Category badge */}
             <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-4">
-              {product.category === 'fruits' ? 'Trái Cây Tươi' : product.category === 'agriculture' ? 'Nông Sản Sạch' : 'Hải Sản Cao Cấp'}
+              {CATEGORY_LABELS[product.category] ?? product.category}
             </span>
 
             {/* Title */}
