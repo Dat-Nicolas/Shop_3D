@@ -1,0 +1,226 @@
+{
+  "asset": {
+    "generator": "Food3D generate-gltf.js",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "L0",
+      "mesh": 0,
+      "translation": [
+        0.4,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.14943813247359922,
+        0.9887710779360422
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "name": "L1",
+      "mesh": 0,
+      "translation": [
+        0.20000000000000007,
+        0.12,
+        0.34641016151377546
+      ],
+      "rotation": [
+        -0.0747190662367996,
+        0.49438553896802107,
+        0.1294172190162412,
+        0.8563008720199357
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "name": "L2",
+      "mesh": 0,
+      "translation": [
+        -0.19999999999999993,
+        0.24,
+        0.3464101615137755
+      ],
+      "rotation": [
+        -0.12941721901624118,
+        0.8563008720199355,
+        0.07471906623679962,
+        0.49438553896802123
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "name": "L3",
+      "mesh": 0,
+      "translation": [
+        -0.4,
+        0.36,
+        4.898587196589413e-17
+      ],
+      "rotation": [
+        -0.14943813247359922,
+        0.9887710779360422,
+        9.150446530217571e-18,
+        6.054476678419262e-17
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "name": "L4",
+      "mesh": 0,
+      "translation": [
+        -0.20000000000000018,
+        0.48,
+        -0.3464101615137754
+      ],
+      "rotation": [
+        -0.1294172190162412,
+        0.8563008720199357,
+        -0.07471906623679958,
+        -0.4943855389680209
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "name": "L5",
+      "mesh": 0,
+      "translation": [
+        0.20000000000000007,
+        0.6,
+        -0.34641016151377546
+      ],
+      "rotation": [
+        -0.0747190662367996,
+        0.49438553896802107,
+        -0.1294172190162412,
+        -0.8563008720199357
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "leaf",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "leaf",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.1,
+          0.4,
+          0.15,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.55
+      }
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "min": [
+        -0.75,
+        -0.009999999776482582,
+        -0.5
+      ],
+      "max": [
+        0.75,
+        0.009999999776482582,
+        0.5
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "byteOffset": 0,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "byteOffset": 288,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "byteOffset": 576,
+      "byteLength": 72,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "data:application/octet-stream;base64,AABAvwrXI7wAAAA/AABAPwrXI7wAAAA/AABAPwrXIzwAAAA/AABAvwrXIzwAAAA/AABAPwrXI7wAAAC/AABAvwrXI7wAAAC/AABAvwrXIzwAAAC/AABAPwrXIzwAAAC/AABAPwrXI7wAAAA/AABAPwrXI7wAAAC/AABAPwrXIzwAAAC/AABAPwrXIzwAAAA/AABAvwrXI7wAAAC/AABAvwrXI7wAAAA/AABAvwrXIzwAAAA/AABAvwrXIzwAAAC/AABAvwrXIzwAAAA/AABAPwrXIzwAAAA/AABAPwrXIzwAAAC/AABAvwrXIzwAAAC/AABAvwrXI7wAAAC/AABAPwrXI7wAAAC/AABAPwrXI7wAAAA/AABAvwrXI7wAAAA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcA",
+      "byteLength": 648
+    }
+  ]
+}

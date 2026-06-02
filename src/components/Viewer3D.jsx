@@ -2005,36 +2005,12 @@ export default function Viewer3D({ modelType, autoRotate = true }) {
     };
 
     const createIPhoneX = () => {
-      // Load GLB from Blender
-      const loader = new GLTFLoader();
-      loader.load(
-        '/Blender/iphone X.glb',
-        (gltf) => {
-          if (isCancelled) return;
-          const model = gltf.scene;
-
-          // Fit model into view
-          const box = new THREE.Box3().setFromObject(model);
-          const size = box.getSize(new THREE.Vector3());
-          const center = box.getCenter(new THREE.Vector3());
-          const maxDim = Math.max(size.x, size.y, size.z);
-          const scale = 2.2 / maxDim;
-          model.scale.setScalar(scale);
-          model.position.sub(center.multiplyScalar(scale));
-
-          model.traverse((child) => {
-            if (child.isMesh) {
-              child.castShadow = true;
-              child.receiveShadow = true;
-            }
-          });
-
-          modelGroup.add(model);
-          setLoading(false);
-        },
-        undefined,
-        (err) => { console.error('GLB load error:', err); setLoading(false); }
-      );
+      // Handled by the GLB loader above — this is a no-op procedural fallback
+      const bodyGeo = new THREE.BoxGeometry(0.74, 1.48, 0.078);
+      const bodyMat = new THREE.MeshPhysicalMaterial({ color: '#1a1a1a', roughness: 0.08, metalness: 0.7 });
+      const body = new THREE.Mesh(bodyGeo, bodyMat);
+      body.castShadow = true;
+      modelGroup.add(body);
     };
 
     const createSamsungPhone = () => {
@@ -2894,11 +2870,56 @@ export default function Viewer3D({ modelType, autoRotate = true }) {
         }
       }
       scene.add(modelGroup);
-      const isGlbAsync = ['phone_iphone_x'].includes(modelType);
-      if (!isGlbAsync) setLoading(false);
+      setLoading(false);
     };
 
-    runProceduralFallback();
+    // Map modelType to custom GLB filename when it differs from the default pattern
+    const glbFilenameMap = {
+      'phone_iphone_x': 'iphone X.glb',
+    };
+    const glbFilename = glbFilenameMap[modelType] || `${modelType}.glb`;
+
+    // Try loading a GLTF/GLB from /Blender first; fall back to procedural if not found
+    const glbPath = `/Blender/${glbFilename}`;
+    const loader = new GLTFLoader();
+    loader.load(
+      glbPath,
+      (gltf) => {
+        if (isCancelled) return;
+        const model = gltf.scene;
+
+        // Auto-fit: scale so the model fills roughly the same viewport as procedural models
+        const box = new THREE.Box3().setFromObject(model);
+        const size = new THREE.Vector3();
+        box.getSize(size);
+        const maxDim = Math.max(size.x, size.y, size.z);
+        const targetSize = 2.4;
+        const scale = targetSize / (maxDim || 1);
+        model.scale.setScalar(scale);
+
+        // Center the model
+        const center = new THREE.Vector3();
+        box.getCenter(center).multiplyScalar(scale);
+        model.position.sub(center);
+
+        model.traverse((child) => {
+          if (child.isMesh) {
+            child.castShadow = true;
+            child.receiveShadow = true;
+          }
+        });
+
+        modelGroup.add(model);
+        scene.add(modelGroup);
+        setLoading(false);
+      },
+      undefined,
+      () => {
+        // GLB not found — run procedural fallback
+        if (isCancelled) return;
+        runProceduralFallback();
+      }
+    );
 
     // ── ANIMATION ─────────────────────────────────────────────────────────────
     let rafId;
